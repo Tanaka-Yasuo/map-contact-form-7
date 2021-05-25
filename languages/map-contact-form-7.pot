@@ -1,0 +1,113 @@
+# Copyright (C) 2021 contact-7-formにmap情報を追加
+# This file is distributed under the same license as the contact-7-formにmap情報を追加 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: contact-7-formにmap情報を追加 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/map-contact-"
+"form-7\n"
+"POT-Creation-Date: 2021-05-25 01:12:11+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/admin.php:47 admin/includes/menu_page.php:19
+#: admin/includes/menu_page.php:20
+msgid "Contact Forms With Place"
+msgstr ""
+
+#: admin/includes/form_list_table.php:42 admin/includes/post_list_table.php:63
+#: modules/place.php:275
+msgid "Name"
+msgstr ""
+
+#: admin/includes/form_list_table.php:43
+msgid "Count"
+msgstr ""
+
+#: admin/includes/menu_page.php:43
+msgid "Contact Forms List With Places"
+msgstr ""
+
+#: admin/includes/menu_page.php:56
+msgid "Search"
+msgstr ""
+
+#: admin/includes/post_list_table.php:64
+msgid "Post Content"
+msgstr ""
+
+#: admin/includes/post_list_table.php:101
+msgid "Delete"
+msgstr ""
+
+#: includes/form_ids_field.php:3
+msgid "Candidate Forms"
+msgstr ""
+
+#: includes/form_ids_field.php:10 includes/options.php:116
+#: includes/options.php:141
+msgid "add"
+msgstr ""
+
+#: includes/form_ids_field.php:15
+msgid "Target Forms"
+msgstr ""
+
+#: includes/form_ids_field.php:64
+msgid "remove"
+msgstr ""
+
+#: includes/shortcode.php:125
+msgid "Rank"
+msgstr ""
+
+#: modules/place.php:194
+msgid "Input keywords"
+msgstr ""
+
+#: modules/place.php:247
+msgid "place"
+msgstr ""
+
+#: modules/place.php:252
+msgid "Generate a form-tag for a place."
+msgstr ""
+
+#: modules/place.php:265 modules/place.php:268
+msgid "Field type"
+msgstr ""
+
+#: modules/place.php:269
+msgid "Required field"
+msgstr ""
+
+#: modules/place.php:280 modules/place.php:283
+msgid "Reserved Words"
+msgstr ""
+
+#: modules/place.php:298
+msgid "Insert Tag"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "contact-7-formにmap情報を追加"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://localohost/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "make places of contace-7-form"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "YasuoTanaka"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://crowdworks.jp/"
+msgstr ""
