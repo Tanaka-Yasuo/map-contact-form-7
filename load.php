@@ -78,3 +78,27 @@ register_activation_hook(
 				$options->delete_option();
 			} );
 	} );
+
+add_filter( 'pre_update_option_active_plugins', function( $active_plugins, $old_value ) {
+	$map_contact_form_7_dirname = basename( dirname( __FILE__ ) );
+	$contact_form_7_index = -1;
+	$map_contact_form_7_index = -1;
+
+	foreach ( $active_plugins as $index => $path ) {
+		$dirname = dirname( $path );
+		if ( $dirname == 'contact-form-7' ) {
+			$contact_form_7_index = $index;
+		}
+		if ( $dirname == $map_contact_form_7_dirname ) {
+			$map_contact_form_7_index = $index;
+			$map_contact_form_7_path = $path;
+		}
+	}
+	if ( $map_contact_form_7_index >= 0 && $contact_form_7_index >= 0 ) {
+		if ( $map_contact_form_7_index < $contact_form_7_index ) {
+		     	array_splice( $active_plugins, $map_contact_form_7_index, 1 );
+			$active_plugins[] = $map_contact_form_7_path;
+		}
+	}
+	return $active_plugins;
+}, 10, 2 );

@@ -112,7 +112,7 @@ class MAP_WPCF7_Options {
 		?>
 		</select>
 		<input type="text" class="map-contact-form-7-add-option" >
-		<button id="map-conatct-form-7-form-ids-add">
+		<button>
         		<?php _e( 'add', 'map-contact-form-7' ); ?>
         	</button>
 		<?php
@@ -137,7 +137,7 @@ class MAP_WPCF7_Options {
 		?>
 		</select>
 		<input type="text" class="map-contact-form-7-add-option" >
-		<button id="map-conatct-form-7-form-ids-add">
+		<button>
         		<?php _e( 'add', 'map-contact-form-7' ); ?>
         	</button>
 		<?php
@@ -157,7 +157,7 @@ class MAP_WPCF7_Options {
 			}
 			$forms[] = array( 
 				'id' => $contact_form->id(),
-				'name' => $contact_form->name()
+				'title' => $contact_form->title()
 			);
 		}
 		require_once MAP_WPCF7_PLUGIN_DIR . '/includes/form_ids_field.php';

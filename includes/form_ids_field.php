@@ -49,7 +49,7 @@
 		var html = '';
 
 		selectableForms.forEach( function( form ) {
-		     html += '<option value="' + form.id + '" ' + selected + '>' + form.name + '</option>';
+		     html += '<option value="' + form.id + '" ' + selected + '>' + form.title + '</option>';
                     selected = '';
 
 		} );
@@ -59,7 +59,7 @@
 
 		html = '';
 		postForms.forEach( function( form ) {
-		     html += '<label>' + form.name + '</label>';
+		     html += '<label>' + form.title + '</label>';
                      html += '<button class="map-conatct-form-7-post-remove" style="margin: 0.5em;">';
 		     html += "<?php _e( 'remove', 'map-contact-form-7' ); ?>";
                      html += '</button>';
@@ -71,7 +71,6 @@
 		$( 'button.map-conatct-form-7-post-remove' ).on( 'click', function(e) {
 		    var val = $( e.target ).nextAll( 'input' ).val();
 
-console.log( 'remove' );
 		    formIds.splice(formIds.indexOf( val ), 1);
 		    resetPosts();
 		    e.preventDefault();
@@ -81,7 +80,7 @@ console.log( 'remove' );
 	    var formIds = <?php echo json_encode( $form_ids, JSON_UNESCAPED_UNICODE ) ?>;
 
 	    forms.forEach( function( form ) {
-		    form.name = decodeURIComponent( form.name );
+		    form.title = decodeURIComponent( form.title );
 	    } );
 	    resetPosts();
 	    $( '#map-conatct-form-7-form-ids-add' ).on( 'click', function(e) {
@@ -93,3 +92,4 @@ console.log( 'remove' );
 	    } );
     } );
 </script>
+

@@ -24,6 +24,9 @@ class MAP_WPCF7_Taxonomy {
 		return $taxonomy;
 	}
 	public function register_taxonomies() {
+		if ( !class_exists( 'WPCF7_FormTagsManager' ) ) {
+			return;
+		}
 		$manager = WPCF7_FormTagsManager::get_instance();
 		$options = MAP_WPCF7_Options::get_instance();
 
